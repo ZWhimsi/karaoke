@@ -14,6 +14,8 @@ To install the project, follow these steps:
 
    ```bash
    $ pip install -r requirements.txt
+   $ pip install git+https://github.com/openai/whisper.git
+   $ pip install -U git+https://github.com/facebookresearch/demucs#egg=demucs
 
 ## Utilization
 
