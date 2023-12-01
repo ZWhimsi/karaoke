@@ -14,6 +14,8 @@ To install the project, follow these steps:
 
    ```bash
    $ pip install -r requirements.txt
+   $ pip install git+https://github.com/openai/whisper.git
+   $ pip install -U git+https://github.com/facebookresearch/demucs#egg=demucs
 
 ## Utilization
 
@@ -25,3 +27,10 @@ Using the script is straightforward:
 
    ```bash
    $ python karaoke.py --filepath your_file_path_to_the_music_file.wav
+
+## Results
+
+1. One `non_vocals.wav` file containing everything except the singer voice.
+2. Three files `drums.wav`, `bass.wav`,`other.wav` containing the separated sound tracks.
+3. The `vocals.wav` file containing the voice of the singer.
+4. The `transcription.txt` file containing the singer vocals.
